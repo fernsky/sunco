@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+.inter {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.dm-sans {
+    font-family: "DM Sans", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+
+body {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.top-navbar {
+    width: 1116px;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;;
+}
+
+.navbar-logo {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.brand-name {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.cart-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #201B21;
+    border-radius: 8px;
+    width: 142px;
+    height: 40px;
+}
+
+.cart-button > p {
+    color: #201B21;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.brand-separator {
+    width: 100%;
+    border: 1px solid #e9ebee;
+}
+
+.hero {
+    background: #EAEEEF;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 24px;
+    padding: 56px 0;
+    width: 1116px;
+    border: 0;
+    border-radius: 48px;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero-marketing {
+    color: #EC5E2A;
+    letter-spacing: -1px;
+    line-height: 56px;
+    font-weight: 700;;
+    font-size: 48px;
+}
+
+.hero-title {
+    font-size: 64px;
+    letter-spacing: -1px;
+    line-height: 73px;
+    text-align: left;
+    font-weight: 700;
+}
+
+.hero-subtitle {
+    color: #67696E;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+.hero-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 284px;
+    height: 64px;
+    padding:  20px; 
+    background: #201B21;
+    border: 0;
+    border-radius: 10px;
+    gap: 8px;
+}
+
+.hero-button-label {
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.drop-image {
+    width: 261px;
+    height: 284px;
+}
+
+.drop-item {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.product-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.product-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.product-subtitle {
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #67696E;
+}
+
+
+.product-price {
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: -0.5px;
+    line-height: 24px;
+}
+
+.drop-heading {
+    color: #201B21;
+    font-size: 36px;
+    letter-spacing: -1px;
+    line-height: 48px;
+    font-weight: 700;
+    padding-left: 24px;
+    margin-bottom: 28px;
+}
+
+.drops-list {
+    width: 1116px;
+    display: flex;
+    gap: 24px;
+    margin-top:36px;
+}
+
+.drop-exploration {
+    margin-top: 64px;
+}
+
+.footer {
+    background: #201B21;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    margin-top: 136px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    padding: 24px 0;
+    width: 1116px;
+    padding: 24px 0;
+}
+
+.brand-name-footer {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.footer-copyright {
+    color: #8c8c8c;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 200;
+}
+
+.social-icons {
+    display: flex;
+    gap: 18px;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+.footer-logo {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 8px;
+}
+
+
+
+@media (max-width: 1148px) {
+.top-navbar {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    height: auto;
+    width: 90vw;
+    padding: 8 12px;
+}
+
+  .hero {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 64px 16px;
+    width: 86vw;
+  }
+
+  .hero-right {
+    margin-bottom: 24px;
+  }
+
+  .drop-exploration {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .hero-button {
+    width: 100%;
+  }
+
+  .drops-list {
+    width: auto;
+    overflow-x: hidden;
+    flex-wrap: nowrap;
+    padding: 0 16px;
+  }
+
+  .drop-item {
+    width: 260px;
+  }
+.footer-content {
+    
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+    width: 86vw;
+    padding: 24px 2rem;
+    gap: 16px;
+}
+
+.footer-logo {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.footer-copyright {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    min-width: 148px;
+    text-align: left;
+}
+
+.social-icons {
+    grid-column: 2 / 3;
+    grid-row: 0 / 3;
+    justify-self: end;
+}
+
+  .footer-left {
+    margin-bottom: 16px;
+  }
+
+  .shoe-image {
+    width: 60vw;
+    max-width: 490px;
+  }
+
+}
